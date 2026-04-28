@@ -1,0 +1,102 @@
+"use client";
+
+import { useEffect, useRef, type ReactNode } from "react";
+
+type CommuteVariant = "fill" | "outline";
+
+type CommuteMarkProps = {
+  className?: string;
+  variant?: CommuteVariant;
+};
+
+function CommuteMark({ className, variant = "fill" }: CommuteMarkProps) {
+  const isOutline = variant === "outline";
+  return (
+    <svg
+      width="1318"
+      height="197"
+      viewBox="0 0 1318 197"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path
+        d="M87.4047 196.199C70.3287 196.199 55.1891 191.974 41.9859 183.523C28.7828 175.073 18.4844 163.455 11.0906 148.667C3.69688 133.704 2.98094e-06 116.804 2.98094e-06 97.9672C2.98094e-06 79.1308 3.69688 62.3188 11.0906 47.5313C18.4844 32.5678 28.7828 20.949 41.9859 12.675C55.1891 4.22504 70.3287 4.62642e-05 87.4047 4.62642e-05C102.368 4.62642e-05 115.659 2.99275 127.278 8.97817C138.897 14.7875 148.139 22.7094 155.005 32.7438C161.87 42.7782 166.095 53.8688 167.68 66.0157H142.858C140.569 54.2209 135.112 43.8344 126.486 34.8563C118.036 25.7021 105.009 21.125 87.4047 21.125C73.1453 21.125 61.3505 24.7339 52.0203 31.9516C42.6901 39.1693 35.8245 48.5875 31.4234 60.2063C27.0224 71.825 24.8219 84.412 24.8219 97.9672C24.8219 111.522 27.0224 124.197 31.4234 135.992C35.8245 147.611 42.6901 157.029 52.0203 164.247C61.3505 171.465 73.1453 175.074 87.4047 175.074C105.537 175.074 119.092 170.144 128.07 160.286C137.048 150.252 141.978 138.281 142.858 124.373H167.68C166.271 138.281 162.134 150.692 155.269 161.606C148.403 172.521 139.161 181.059 127.542 187.22C115.923 193.206 102.544 196.199 87.4047 196.199ZM265.416 196.199C329.055 196.199 377.642 140.745 377.642 76.5782C377.642 31.1594 349.124 4.62642e-05 301.064 4.62642e-05C237.425 4.62642e-05 188.838 55.4532 188.838 119.62C188.838 165.039 217.356 196.199 265.416 196.199ZM212.867 119.62C212.867 67.6001 247.724 21.125 299.216 21.125C338.033 21.125 353.613 45.4188 353.613 76.5782C353.613 128.598 318.756 175.074 267.264 175.074C228.447 175.074 212.867 150.78 212.867 119.62ZM400.185 3.69692H432.664L491.814 160.55H492.342L551.492 3.69692H583.972V192.502H560.207V37.2329H559.678L502.641 192.502H481.516L424.478 37.2329H423.95V192.502H400.185V3.69692ZM622.987 3.69692H655.467L714.617 160.55H715.145L774.295 3.69692H806.775V192.502H783.009V37.2329H782.481L725.444 192.502H704.319L647.281 37.2329H646.753V192.502H622.987V3.69692ZM916.823 196.199C892.529 196.199 874.397 190.213 862.426 178.242C850.455 166.095 844.47 149.9 844.47 129.655V3.69692H868.235V129.655C868.235 144.97 872.196 156.413 880.118 163.983C888.216 171.377 900.451 175.074 916.823 175.074C933.195 175.074 945.342 171.377 953.264 163.983C961.362 156.413 965.41 144.97 965.41 129.655V3.69692H989.176V129.655C989.176 149.9 983.191 166.095 971.22 178.242C959.249 190.213 941.117 196.199 916.823 196.199ZM1074.08 24.8219H1011.24V3.69692H1160.7V24.8219H1097.85V192.502H1074.08V24.8219ZM1184.12 3.69692H1314.83V24.8219H1207.89V84.236H1302.16V105.361H1207.89V171.377H1318V192.502H1184.12V3.69692Z"
+        fill={isOutline ? "transparent" : "#fe610b"}
+        stroke={isOutline ? "#fe610b" : "none"}
+        strokeWidth={isOutline ? 2 : undefined}
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+type ParallaxCommuteProps = {
+  children?: ReactNode;
+  className?: string;
+  variant?: CommuteVariant;
+  speed?: number;
+  maxOffset?: number;
+};
+
+export default function ParallaxCommute({
+  children,
+  className,
+  variant = "fill",
+  speed = 0.12,
+  maxOffset = 72,
+}: ParallaxCommuteProps) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
+    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let rafId: number | null = null;
+
+    const updateOffset = () => {
+      rafId = null;
+      const offset = motionQuery.matches
+        ? 0
+        : Math.min(window.scrollY * speed, maxOffset);
+
+      element.style.setProperty("--commute-parallax-y", `${offset.toFixed(2)}px`);
+    };
+
+    const requestUpdate = () => {
+      if (rafId !== null) return;
+      rafId = window.requestAnimationFrame(updateOffset);
+    };
+
+    updateOffset();
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate);
+    motionQuery.addEventListener("change", requestUpdate);
+
+    return () => {
+      window.removeEventListener("scroll", requestUpdate);
+      window.removeEventListener("resize", requestUpdate);
+      motionQuery.removeEventListener("change", requestUpdate);
+
+      if (rafId !== null) {
+        window.cancelAnimationFrame(rafId);
+      }
+    };
+  }, [maxOffset, speed]);
+
+  return (
+    <div
+      ref={ref}
+      className={className}
+      style={{
+        transform: "translate3d(-50%, var(--commute-parallax-y, 0px), 0)",
+        willChange: "transform",
+      }}
+    >
+      {children ?? <CommuteMark className="block h-auto w-full" variant={variant} />}
+    </div>
+  );
+}

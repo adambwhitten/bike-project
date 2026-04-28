@@ -1,0 +1,11 @@
+{
+  "enabledMcpjsonServers": [
+    "playwright",
+    "sanity"
+  ],
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)"
+    ]
+  }
+}

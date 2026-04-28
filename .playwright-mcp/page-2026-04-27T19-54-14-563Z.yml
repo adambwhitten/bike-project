@@ -1,0 +1,320 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - img "ReCycle" [ref=e5]
+        - generic [ref=e6]: ReCycle
+      - generic [ref=e7]:
+        - link "E-bikes" [ref=e8] [cursor=pointer]:
+          - /url: "#"
+        - link "Specs" [ref=e9] [cursor=pointer]:
+          - /url: "#"
+        - link "Our impact" [ref=e10] [cursor=pointer]:
+          - /url: "#"
+        - link "Contact us" [ref=e11] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e12]:
+        - button "Get Started" [ref=e13]
+        - button "Explore" [ref=e14]
+    - generic [ref=e15]:
+      - generic [ref=e17]: COMMUTE
+      - img "ReCycle E-bike" [ref=e19]
+      - generic [ref=e22]: COMMUTE
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - heading "Revolutionize Your Commute with ReCycle E-Bikes" [level=2] [ref=e26]
+        - generic [ref=e27]:
+          - button "Get Started" [ref=e28]
+          - button "Learn More" [ref=e29]
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - heading "Positive Impact of ReCycle E-Bikes" [level=3] [ref=e32]
+          - paragraph [ref=e33]: Not only are ReCycle e-bikes good for the environment, they are also beneficial for your health and well-being. Electric-assisted biking can provide a low-impact cardiovascular workout and help reduce stress while getting you where you need to go.
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]: 25%
+            - paragraph [ref=e37]: Reduction in commuter transportation carbon emissions.
+          - generic [ref=e38]:
+            - generic [ref=e39]: 30%
+            - paragraph [ref=e40]: Reduction in commuter transportation carbon emissions.
+    - generic [ref=e42]:
+      - generic [ref=e43]: ReCycle® —
+      - generic [ref=e44]: ReCycle® —
+      - generic [ref=e45]: ReCycle® —
+      - generic [ref=e46]: ReCycle® —
+      - generic [ref=e47]: ReCycle® —
+      - generic [ref=e48]: ReCycle® —
+    - img "ReCycle e-bike in action" [ref=e50]
+    - generic [ref=e52]:
+      - heading "Leading the Way in Sustainable Transportation" [level=2] [ref=e53]:
+        - text: Leading the Way in
+        - text: Sustainable Transportation
+      - generic [ref=e54]:
+        - img "ReCycle street model" [ref=e56]
+        - img "ReCycle urban model" [ref=e58]
+        - img "ReCycle performance model" [ref=e60]
+      - generic [ref=e61]:
+        - button "Previous" [ref=e62]:
+          - img [ref=e63]
+        - button "Next" [ref=e65]:
+          - img [ref=e66]
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - img "High-quality e-bike materials" [ref=e70]
+          - generic [ref=e72]:
+            - heading "High-quality materials" [level=3] [ref=e73]
+            - paragraph [ref=e74]: Premium materials and advanced construction techniques to ensure durability and a long lifespan.
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - img "E-bike component quality" [ref=e78]
+            - generic [ref=e79]:
+              - heading "High-quality materials" [level=3] [ref=e80]
+              - paragraph [ref=e81]: Premium materials and advanced construction techniques to ensure durability and a long lifespan.
+          - generic [ref=e82]:
+            - img "Sustainable manufacturing" [ref=e84]
+            - generic [ref=e85]:
+              - heading "Sustainable manufacturing practices" [level=3] [ref=e86]
+              - paragraph [ref=e87]: We have adopted environmentally-friendly manufacturing practices and source all our materials sustainably.
+    - generic [ref=e89]:
+      - generic [ref=e90]: EcoBoost —
+      - generic [ref=e91]: EcoBoost —
+      - generic [ref=e92]: EcoBoost —
+      - generic [ref=e93]: EcoBoost —
+      - generic [ref=e94]: EcoBoost —
+      - generic [ref=e95]: EcoBoost —
+    - generic [ref=e97]:
+      - generic [ref=e98]: EcoBoost —
+      - generic [ref=e99]: EcoBoost —
+      - generic [ref=e100]: EcoBoost —
+      - generic [ref=e101]: EcoBoost —
+      - generic [ref=e102]: EcoBoost —
+      - generic [ref=e103]: EcoBoost —
+    - generic [ref=e105]:
+      - generic [ref=e106]: EcoBoost —
+      - generic [ref=e107]: EcoBoost —
+      - generic [ref=e108]: EcoBoost —
+      - generic [ref=e109]: EcoBoost —
+      - generic [ref=e110]: EcoBoost —
+      - generic [ref=e111]: EcoBoost —
+    - generic [ref=e113]:
+      - generic [ref=e114]: EcoBoost —
+      - generic [ref=e115]: EcoBoost —
+      - generic [ref=e116]: EcoBoost —
+      - generic [ref=e117]: EcoBoost —
+      - generic [ref=e118]: EcoBoost —
+      - generic [ref=e119]: EcoBoost —
+    - generic [ref=e121]:
+      - img "ReCycle e-bike showcase" [ref=e123]
+      - generic [ref=e124]:
+        - generic [ref=e125]: "[bike-scene-9] 426×561"
+        - generic [ref=e126]:
+          - button "Previous bike" [ref=e127]:
+            - img [ref=e128]
+          - button "Next bike" [ref=e130]:
+            - img [ref=e131]
+    - generic [ref=e134]:
+      - img "ReCycle testimonial" [ref=e136]
+      - generic [ref=e137]:
+        - generic [ref=e138]:
+          - img [ref=e139]
+          - img [ref=e141]
+          - img [ref=e143]
+          - img [ref=e145]
+          - img [ref=e147]
+        - blockquote [ref=e149]: “ReCycle e-bikes have exceeded my expectations. Not only have I saved money on gas, but my fitness and well-being have also improved. Plus, I’m doing my part to reduce my carbon footprint. I highly recommend ReCycle to anyone looking for a smarter way to commute.”
+        - generic [ref=e150]:
+          - generic [ref=e151]: J
+          - generic [ref=e152]:
+            - paragraph [ref=e153]: Jordan M.
+            - paragraph [ref=e154]: Daily commuter, San Francisco
+    - generic [ref=e155]:
+      - img "Join the ReCycle Revolution" [ref=e157]
+      - heading "Join the ReCycle Revolution" [level=2] [ref=e159]
+      - generic [ref=e161]: Join
+    - contentinfo [ref=e162]:
+      - generic [ref=e164]: COMMUTE
+      - generic [ref=e165]:
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - img "ReCycle" [ref=e168]
+            - generic [ref=e169]: ReCycle
+          - paragraph [ref=e170]: Join our newsletter to stay up to date on features and releases.
+          - generic [ref=e171]:
+            - textbox "Enter your email" [ref=e173]
+            - button "Subscribe" [ref=e174]
+          - paragraph [ref=e175]: By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.
+        - generic [ref=e176]:
+          - heading "Explore" [level=4] [ref=e177]
+          - list [ref=e178]:
+            - listitem [ref=e179]:
+              - link "E-bikes" [ref=e180] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e181]:
+              - link "Specs" [ref=e182] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e183]:
+              - link "Our impact" [ref=e184] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e185]:
+              - link "Contact us" [ref=e186] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e187]:
+          - heading "Our top picks" [level=4] [ref=e188]
+          - list [ref=e189]:
+            - listitem [ref=e190]:
+              - link "Zoom" [ref=e191] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e192]:
+              - link "EcoBoost" [ref=e193] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e194]:
+              - link "Voltage" [ref=e195] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e196]:
+              - link "PowerPedal" [ref=e197] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e198]:
+          - heading "Follow Us" [level=4] [ref=e199]
+          - list [ref=e200]:
+            - listitem [ref=e201]:
+              - link "Facebook" [ref=e202] [cursor=pointer]:
+                - /url: "#"
+                - text: Facebook
+            - listitem [ref=e204]:
+              - link "Instagram" [ref=e205] [cursor=pointer]:
+                - /url: "#"
+                - text: Instagram
+            - listitem [ref=e207]:
+              - link "Twitter" [ref=e208] [cursor=pointer]:
+                - /url: "#"
+                - text: Twitter
+            - listitem [ref=e210]:
+              - link "LinkedIn" [ref=e211] [cursor=pointer]:
+                - /url: "#"
+                - text: LinkedIn
+      - generic [ref=e214]:
+        - paragraph [ref=e215]: 2021 Relume. All right reserved.
+        - generic [ref=e216]:
+          - link "Privacy Policy" [ref=e217] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Service" [ref=e218] [cursor=pointer]:
+            - /url: "#"
+          - link "Cookies Settings" [ref=e219] [cursor=pointer]:
+            - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=e225] [cursor=pointer]:
+    - img [ref=e226]
+  - alert [ref=e229]
+  - button "v3.0.1 Output Detail Standard React Components Hide Until Restart Marker Color Clear on copy/send Block page interactions Manage MCP & Webhooks Manage MCP & Webhooks MCP Connection MCP connection allows agents to receive and act on annotations. Learn more Webhooks Auto-Send The webhook URL will receive live annotation changes and annotation data." [ref=e231] [cursor=pointer]:
+    - img [ref=e233]
+    - generic:
+      - generic:
+        - button:
+          - img
+      - generic:
+        - button:
+          - img
+      - generic:
+        - button [disabled]:
+          - img
+      - generic:
+        - button [disabled]:
+          - img
+      - generic:
+        - button [disabled]:
+          - img
+      - generic:
+        - button [disabled]:
+          - img
+      - generic:
+        - button:
+          - img
+      - generic:
+        - button:
+          - img
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: https://agentation.com
+              - img
+            - paragraph: v3.0.1
+            - button "Switch to light mode":
+              - generic:
+                - generic:
+                  - img
+          - generic:
+            - generic:
+              - generic:
+                - text: Output Detail
+                - generic:
+                  - img
+              - button "Standard":
+                - generic: Standard
+            - generic:
+              - generic:
+                - text: React Components
+                - generic:
+                  - img
+              - generic:
+                - checkbox [checked]
+            - generic:
+              - generic:
+                - text: Hide Until Restart
+                - generic:
+                  - img
+              - generic:
+                - checkbox
+          - generic:
+            - generic: Marker Color
+            - generic:
+              - button "Indigo"
+              - button "Blue"
+              - button "Cyan"
+              - button "Green"
+              - button "Yellow"
+              - button "Orange"
+              - button "Red"
+          - generic:
+            - generic:
+              - generic:
+                - checkbox "Clear on copy/send"
+                - img
+              - generic: Clear on copy/send
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - checkbox "Block page interactions" [checked]
+                - img
+              - generic: Block page interactions
+          - button "Manage MCP & Webhooks":
+            - generic: Manage MCP & Webhooks
+            - generic:
+              - img
+        - generic:
+          - button "Manage MCP & Webhooks":
+            - img
+            - generic: Manage MCP & Webhooks
+          - generic:
+            - generic:
+              - generic:
+                - text: MCP Connection
+                - generic:
+                  - img
+            - paragraph:
+              - text: MCP connection allows agents to receive and act on annotations.
+              - link "Learn more":
+                - /url: https://agentation.dev/mcp
+          - generic:
+            - generic:
+              - generic:
+                - text: Webhooks
+                - generic:
+                  - img
+              - generic:
+                - generic: Auto-Send
+                - generic:
+                  - checkbox "Auto-Send" [checked] [disabled]
+            - paragraph: The webhook URL will receive live annotation changes and annotation data.
+            - textbox "Webhook URL"
