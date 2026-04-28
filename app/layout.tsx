@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Space_Grotesk, DM_Sans, Roboto } from "next/font/google";
 import "./globals.css";
 import { AgentationProvider } from "@/components/AgentationProvider";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -37,6 +39,8 @@ export default function RootLayout({
     <html lang="en" className={`${spaceGrotesk.variable} ${dmSans.variable} ${roboto.variable}`}>
       <body className="font-[family-name:var(--font-body)] antialiased">
         {children}
+        <Analytics />
+        <SpeedInsights />
         <AgentationProvider />
       </body>
     </html>
